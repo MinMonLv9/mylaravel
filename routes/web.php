@@ -21,6 +21,7 @@ use App\Http\Controllers\category\categorycontroller;
 
 Route::get('roleprocess/search', [rolecontroller::class, 'searchProcess']);
 Route::resource('roleprocess', rolecontroller::class);
+Route::get('roleprocess/testing1', rolecontroller::class, 'searchProcess');
 
 Route::get('shopprocess/search', [shopcontroller::class, 'searchProcess']);
 Route::get('shopdashboard/',[shopcontroller::class, 'showDashboard']);
